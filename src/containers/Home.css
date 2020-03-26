@@ -21,5 +21,12 @@
     text-overflow: ellipsis;
   }
   .Home .notes p {
+    font-family: "Open Sans", sans-serif;
     color: #666;
+  }
+
+  .notes {
+    font-family: Roboto, sans-serif;
+    color: darkgray;
+    font-size: smaller;
   }
