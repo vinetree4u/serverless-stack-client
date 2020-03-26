@@ -3,6 +3,7 @@ import "./Home.css";
 import { API } from "aws-amplify";
 import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Home(props) {
   const [notes, setNotes] = useState([]);
