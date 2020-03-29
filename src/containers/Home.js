@@ -56,13 +56,13 @@ export default function Home(props) {
     return (
       <div className="lander">
         <h1>CrossB, 다리를 놓는 사람들</h1>
-        <p>우리 함께 코로나 바이러스를 이겨내요!</p>
+        <p>우리 함께 힘든 시간을 이겨내요!</p>
         <div>
           <Link to="/login" className="btn btn-info btn-lg">
-            Login
+            로그인
           </Link>
           <Link to="/signup" className="btn btn-success btn-lg">
-            Signup
+            등록하기
           </Link>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function Home(props) {
   function renderNotes() {
     return (
       <div className="notes">
-        <PageHeader>Your Notes</PageHeader>
+        <PageHeader>우리들의 마음을 나누는 공간입니다</PageHeader>
         <ListGroup>
           {!isLoading && renderNotesList(notes)}
         </ListGroup>
