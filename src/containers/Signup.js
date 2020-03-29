@@ -97,7 +97,7 @@ export default function Signup(props) {
     return (
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
-          <ControlLabel>Email</ControlLabel>
+          <ControlLabel>이메일</ControlLabel>
           <FormControl
             autoFocus
             type="email"
@@ -106,7 +106,7 @@ export default function Signup(props) {
           />
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
-          <ControlLabel>Password</ControlLabel>
+          <ControlLabel>비밀번호</ControlLabel>
           <FormControl
             type="password"
             value={fields.password}
@@ -114,7 +114,7 @@ export default function Signup(props) {
           />
         </FormGroup>
         <FormGroup controlId="confirmPassword" bsSize="large">
-          <ControlLabel>Confirm Password</ControlLabel>
+          <ControlLabel>비밀번호 확인</ControlLabel>
           <FormControl
             type="password"
             onChange={handleFieldChange}

@@ -144,7 +144,7 @@ export default function Notes(props) {
           <LoaderButton
             block
             type="submit"
-            bsSize="small"
+            bsSize="large"
             bsStyle="primary"
             isLoading={isLoading}
             disabled={!validateForm()}

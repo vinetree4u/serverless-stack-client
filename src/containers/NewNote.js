@@ -62,7 +62,7 @@ export default function NewNote(props) {
           />
         </FormGroup>
         <FormGroup controlId="file">
-          <ControlLabel>Attachment</ControlLabel>
+          <ControlLabel>첨부파일</ControlLabel>
           <FormControl onChange={handleFileChange} type="file" />
         </FormGroup>
         <LoaderButton
@@ -73,7 +73,7 @@ export default function NewNote(props) {
           isLoading={isLoading}
           disabled={!validateForm()}
         >
-          새 글쓰기
+          글 올리기
         </LoaderButton>
       </form>
     </div>
