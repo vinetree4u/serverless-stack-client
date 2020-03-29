@@ -94,7 +94,7 @@ export default function Notes(props) {
     event.preventDefault();
   
     const confirmed = window.confirm(
-      "Are you sure you want to delete this note?"
+      "이 글을 삭제하시겠습니까?"
     );
   
     if (!confirmed) {
@@ -125,7 +125,7 @@ export default function Notes(props) {
           </FormGroup>
           {note.attachment && (
             <FormGroup>
-              <ControlLabel>Attachment</ControlLabel>
+              <ControlLabel>첨부파일</ControlLabel>
               <FormControl.Static>
                 <a
                   target="_blank"
@@ -138,7 +138,7 @@ export default function Notes(props) {
             </FormGroup>
           )}
           <FormGroup controlId="file">
-            {!note.attachment && <ControlLabel>Attachment</ControlLabel>}
+            {!note.attachment && <ControlLabel>첨부파일</ControlLabel>}
             <FormControl onChange={handleFileChange} type="file" />
           </FormGroup>
           <LoaderButton
@@ -149,7 +149,7 @@ export default function Notes(props) {
             isLoading={isLoading}
             disabled={!validateForm()}
           >
-            Save
+            저장하기
           </LoaderButton>
           <LoaderButton
             block
@@ -158,7 +158,7 @@ export default function Notes(props) {
             onClick={handleDelete}
             isLoading={isDeleting}
           >
-            Delete
+            삭제하기
           </LoaderButton>
         </form>
       )}

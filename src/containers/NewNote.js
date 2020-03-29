@@ -24,8 +24,8 @@ export default function NewNote(props) {
   
     if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
       alert(
-        `Please pick a file smaller than ${config.MAX_ATTACHMENT_SIZE /
-          1000000} MB.`
+        `${config.MAX_ATTACHMENT_SIZE /
+          1000000} MB보다 작은 사이즈의 파일을 선택해 주세요.`
       );
       return;
     }
