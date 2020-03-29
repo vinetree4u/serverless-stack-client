@@ -42,7 +42,7 @@ function App(props) {
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">CrossB Community</Link>
+              <Link to="/">CrossB 홈</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -51,17 +51,17 @@ function App(props) {
               {isAuthenticated ? (
                 <>
                   <LinkContainer to="/settings">
-                    <NavItem>Settings</NavItem>
+                    <NavItem>설정</NavItem>
                   </LinkContainer>
-                  <NavItem onClick={handleLogout}>Logout</NavItem>
+                  <NavItem onClick={handleLogout}>로그아웃</NavItem>
                 </>
               ) : (
                 <>
                   <LinkContainer to="/signup">
-                    <NavItem>Signup</NavItem>
+                    <NavItem>회원가입</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/login">
-                    <NavItem>Login</NavItem>
+                    <NavItem>로그인</NavItem>
                   </LinkContainer>
                 </>
               )}

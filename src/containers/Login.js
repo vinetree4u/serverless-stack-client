@@ -34,7 +34,7 @@ export default function Login(props) {
     <div className="Login">
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
-          <ControlLabel>Email</ControlLabel>
+          <ControlLabel>이메일</ControlLabel>
           <FormControl
             autoFocus
             type="email"
@@ -43,7 +43,7 @@ export default function Login(props) {
           />
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
-          <ControlLabel>Password</ControlLabel>
+          <ControlLabel>비밀번호</ControlLabel>
           <FormControl
             type="password"
             value={fields.password}
@@ -57,7 +57,7 @@ export default function Login(props) {
           isLoading={isLoading}
           disabled={!validateForm()}
         >
-          Login
+          로그인
         </LoaderButton>
       </form>
     </div>

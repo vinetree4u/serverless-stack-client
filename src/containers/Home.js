@@ -62,7 +62,7 @@ export default function Home(props) {
             로그인
           </Link>
           <Link to="/signup" className="btn btn-success btn-lg">
-            등록하기
+            회원가입
           </Link>
         </div>
       </div>

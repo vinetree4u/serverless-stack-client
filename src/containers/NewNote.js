@@ -73,7 +73,7 @@ export default function NewNote(props) {
           isLoading={isLoading}
           disabled={!validateForm()}
         >
-          Create
+          새 글쓰기
         </LoaderButton>
       </form>
     </div>

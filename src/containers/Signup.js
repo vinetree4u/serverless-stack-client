@@ -128,7 +128,7 @@ export default function Signup(props) {
           isLoading={isLoading}
           disabled={!validateForm()}
         >
-          Signup
+          회원가입
         </LoaderButton>
       </form>
     );
