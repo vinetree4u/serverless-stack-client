@@ -72,7 +72,7 @@ export default function Home(props) {
   function renderNotes() {
     return (
       <div className="notes">
-        <PageHeader>우리들의 마음을 나누는 공간입니다</PageHeader>
+        <PageHeader>우리들의 마음을 나누는 공간입니다...</PageHeader>
         <ListGroup>
           {!isLoading && renderNotesList(notes)}
         </ListGroup>
